@@ -51,8 +51,12 @@
         </div>
     </div>
 </section>
+<?php
+require_once("vendor/autoload.php");
+use App\User\User;
 
-
-
+$objUser = new User();
+$userAuth = $objUser->show($_SESSION['author_id']);
+?>
 
 <?php require_once "includes/footer.php"; ?>

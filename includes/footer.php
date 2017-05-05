@@ -51,9 +51,9 @@
         <div class="widget widget_about">
             <h4>About me</h4>
             <div class="author-thumb">
-                <img src="images/author/<?php echo $author->profile_picture; ?>" alt="">
+                <img src="images/author/<?php echo $userAuth->profile_picture; ?>" alt="">
             </div>
-            <h3 class="author-name"><a href="#"><?php echo $author->user_name; ?></a>&nbsp;<a href="User/Authentication/logout.php">(Logout)</a></h3>
+            <h3 class="author-name"><a href="#"><?php echo $userAuth->user_name; ?></a>&nbsp;<a href="User/Authentication/logout.php">(Logout)</a></h3>
             <div class="desc">
                 <p>In vitae ligula tristique, commodo justo sit amet, venenatis turpis. Maecenas condimentum, erat non fermentum facilisis.</p>
             </div>
