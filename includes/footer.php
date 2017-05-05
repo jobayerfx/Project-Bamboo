@@ -43,9 +43,14 @@
     <div class="widget-wrapper">
         <?php
         use App\User\Auth;
-        $auth= new Auth();
+        use App\Utility\Utility;
+		use App\User\User;
+        $auth = new Auth();
         $status = $auth->logged_in();
         if ($status){
+			$objUser = new User();
+			$userAuth = $objUser->show($_SESSION['author_id']);
+			//Utility::dd($userAuth);
         ?>
         <!-- Start About me Part -->
         <div class="widget widget_about">

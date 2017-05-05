@@ -109,8 +109,8 @@ if(isset($_REQUEST['search']) ) {
         <?php
             $objUser = new User();
             $author = $objUser->show($values->author_id);
-			if(isset($_SESSION['author_id']))
-				$userAuth = $objUser->show($_SESSION['author_id']);
+			//if(isset($_SESSION['author_id']))
+				//$userAuth = $objUser->show($_SESSION['author_id']);
 
             $objComment = new Comment();
             $comments = $objComment->index($values->id);
